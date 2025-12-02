@@ -1,2 +1,2 @@
 # leleparfait.github.io
-"Someone's page btw"
+<b>"Someone's page btw"</b>
