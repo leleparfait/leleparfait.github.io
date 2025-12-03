@@ -30,10 +30,28 @@
       transform: rotate(0deg);
     
     filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.4));
-    hover {
-  transform: rotate(360deg);
-  transition: transform 1s;
-  }
+  /* CD styling */
+    #cd {
+      width: 200px;
+      height: auto;
+      position: relative;
+      left: 320px;
+      top: -40px;
+      transform: rotate(0deg);
+
+      /* shadow */
+      filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.4));
+
+      /* smooth transition for hover */
+      transition: transform 1s;
+    }
+
+    /* Hover effect */
+    #cd:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+
 
     }
   </style>
