@@ -3,45 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kawaii Music Vibes</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <title>Music</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  
-  <!-- Header Section -->
-  <header>
-    <div class="logo">
-      <img src="https://www.pngkit.com/png/full/849-8498657_kawaii-panda-panda-cute-kawaii-logo.png" alt="Kawaii Panda Logo" />
-      <h1>Kawaii Music Vibes</h1>
-    </div>
-  </header>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f0f6;
+      color: #333;
+      text-align: center;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
 
-  <!-- Main Content Section -->
-  <section class="music-player">
-    <div class="album-cover">
-      <img src="https://via.placeholder.com/200/FFC0CB/000000?text=Album+Cover" alt="Album Cover">
-    </div>
-    <div class="track-info">
-      <h2 id="track-title">Track Title</h2>
-      <p id="artist-name">Artist Name</p>
-    </div>
+    header {
+      background-color: #FFB6C1;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- Audio Player -->
-    <div class="audio-controls">
-      <button id="prevBtn" class="control-btn">⏪</button>
-      <button id="playPauseBtn" class="control-btn">🎶</button>
-      <button id="nextBtn" class="control-btn">⏩</button>
-    </div>
-    <audio id="audio-player" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto"></audio>
-  </section>
+    header .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
 
-  <!-- Footer Section -->
-  <footer>
-    <p>Made with ❤️ by Your Name | &copy; 2025</p>
-  </footer>
+    header img {
+      width: 50px;
+      height: 50px;
+    }
 
-  <script src="script.js"></script>
-</body>
-</html>
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 600;
+    }
 
+    .music-player {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .album-cover img {
+      border-radius: 15px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .track-info h2 {
+      font-size: 1.8rem;
